@@ -12,9 +12,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 st.write('# Shop Customer Clustering')
-st.write('## Using KMeans')
-st.write('Shop Customer Data adalah analisis mendalam dari pelanggan sebuah toko. Dataset ini berguna untuk membantu memahami pelanggan dengan lebih baik. Pemilik toko mendapatkan informasi ini dari kartu pelanggan. ')
-
+st.write('Berikut adalah dataset dummy yang berisi karakteristik konsumen sebuah toko.')
+st.write('Pada program ini dataset konsumen ini akan diklaster menggunakan algoritma KMeans.')
 # Specify the data path
 data_path = 'Customers.csv'
 
@@ -53,7 +52,8 @@ kluster = kmeans.labels_
 # print(kluster)
 # print(df)
 #print(df.iloc[-1])
-
+st.write('## Data yang telah diklaster')
+st.write('Tiap record akan memiliki label berupa klaster mana dia berada')
 st.write(df)
 st.write('# Masukkan Data yang Akan di Cluster')
 
